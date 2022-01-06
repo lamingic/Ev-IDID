@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smile version="1.0" id="UAV_IPTG_T3" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="S3">
+			<state id="G_1_1" />
+			<state id="G_1_2" />
+			<state id="G_1_3" />
+			<state id="G_2_1" />
+			<state id="G_2_2" />
+			<state id="G_2_3" />
+			<state id="G_3_1" />
+			<state id="G_3_2" />
+			<state id="G_3_3" />
+			<probabilities>0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111111 0.1111111111111109</probabilities>
+		</cpt>
+		<cpt id="O3">
+			<state id="Sense_North" />
+			<state id="Sense_South" />
+			<state id="Sense_Level" />
+			<state id="Safe" />
+			<parents>S3</parents>
+			<probabilities>0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<decision id="D3">
+			<state id="Move_North" />
+			<state id="Move_South" />
+			<state id="Move_East" />
+			<state id="Move_West" />
+			<state id="Listen" />
+			<parents>O3</parents>
+		</decision>
+		<cpt id="S2">
+			<state id="G_1_1" />
+			<state id="G_1_2" />
+			<state id="G_1_3" />
+			<state id="G_2_1" />
+			<state id="G_2_2" />
+			<state id="G_2_3" />
+			<state id="G_3_1" />
+			<state id="G_3_2" />
+			<state id="G_3_3" />
+			<parents>S3 D3</parents>
+			<probabilities>0.6 0.1 0 0.2 0.1 0 0 0 0 0.7 0.1 0 0.1 0.1 0 0 0 0 0.6 0.2 0 0.1 0.1 0 0 0 0 0.7 0.1 0 0.1 0.1 0 0 0 0 0.5 0.1 0 0.1 0.3 0 0 0 0 0.1 0.4 0.1 0.1 0.2 0.1 0 0 0 0.1 0.5 0.1 0.1 0.1 0.1 0 0 0 0.1 0.4 0.2 0.1 0.1 0.1 0 0 0 0.2 0.4 0.1 0.1 0.1 0.1 0 0 0 0.1 0.3 0.1 0.1 0.3 0.1 0 0 0 0 0.1 0.6 0 0.1 0.2 0 0 0 0 0.1 0.7 0 0.1 0.1 0 0 0 0 0.1 0.7 0 0.1 0.1 0 0 0 0 0.2 0.6 0 0.1 0.1 0 0 0 0 0.1 0.5 0 0.3 0.1 0 0 0 0.1 0.1 0 0.4 0.1 0 0.2 0.1 0 0.1 0.2 0 0.4 0.1 0 0.1 0.1 0 0.1 0.1 0 0.4 0.2 0 0.1 0.1 0 0.1 0.1 0 0.5 0.1 0 0.1 0.1 0 0.1 0.1 0 0.3 0.3 0 0.1 0.1 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.1 0 0.1 0.1 0 0.1 0.4 0 0.2 0.1 0 0.1 0.2 0 0.1 0.4 0 0.1 0.1 0 0.1 0.1 0 0.1 0.5 0 0.1 0.1 0 0.1 0.1 0 0.2 0.4 0 0.1 0.1 0 0.1 0.1 0 0.3 0.3 0 0.1 0.1 0 0 0 0.1 0.1 0 0.7 0.1 0 0 0 0 0.2 0.1 0 0.6 0.1 0 0 0 0 0.1 0.1 0 0.6 0.2 0 0 0 0 0.1 0.1 0 0.7 0.1 0 0 0 0 0.1 0.3 0 0.5 0.1 0 0 0 0 0.1 0.1 0.1 0.1 0.5 0.1 0 0 0 0.1 0.2 0.1 0.1 0.4 0.1 0 0 0 0.1 0.1 0.1 0.1 0.4 0.2 0 0 0 0.1 0.1 0.1 0.2 0.4 0.1 0 0 0 0.1 0.3 0.1 0.1 0.3 0.1 0 0 0 0 0.1 0.1 0 0.1 0.7 0 0 0 0 0.1 0.2 0 0.1 0.6 0 0 0 0 0.1 0.1 0 0.1 0.7 0 0 0 0 0.1 0.1 0 0.2 0.6 0 0 0 0 0.3 0.1 0 0.1 0.5</probabilities>
+		</cpt>
+		<cpt id="O2">
+			<state id="Sense_North" />
+			<state id="Sense_South" />
+			<state id="Sense_Level" />
+			<state id="Safe" />
+			<parents>S2 D3</parents>
+			<probabilities>0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.4 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.6 0.1 0.2 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.4 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.4 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.2 0.3 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.4 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.1 0.1 0.4 0.4 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.1 0.1 0.2 0.6 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.1 0.1 0.4 0.4</probabilities>
+		</cpt>
+		<decision id="D2">
+			<state id="Move_North" />
+			<state id="Move_South" />
+			<state id="Move_East" />
+			<state id="Move_West" />
+			<state id="Listen" />
+			<parents>D3 O2</parents>
+		</decision>
+		<cpt id="S1">
+			<state id="G_1_1" />
+			<state id="G_1_2" />
+			<state id="G_1_3" />
+			<state id="G_2_1" />
+			<state id="G_2_2" />
+			<state id="G_2_3" />
+			<state id="G_3_1" />
+			<state id="G_3_2" />
+			<state id="G_3_3" />
+			<parents>S2 D2</parents>
+			<probabilities>0.6 0.1 0 0.2 0.1 0 0 0 0 0.7 0.1 0 0.1 0.1 0 0 0 0 0.6 0.2 0 0.1 0.1 0 0 0 0 0.7 0.1 0 0.1 0.1 0 0 0 0 0.5 0.1 0 0.1 0.3 0 0 0 0 0.1 0.4 0.1 0.1 0.2 0.1 0 0 0 0.1 0.5 0.1 0.1 0.1 0.1 0 0 0 0.1 0.4 0.2 0.1 0.1 0.1 0 0 0 0.2 0.4 0.1 0.1 0.1 0.1 0 0 0 0.1 0.3 0.1 0.1 0.3 0.1 0 0 0 0 0.1 0.6 0 0.1 0.2 0 0 0 0 0.1 0.7 0 0.1 0.1 0 0 0 0 0.1 0.7 0 0.1 0.1 0 0 0 0 0.2 0.6 0 0.1 0.1 0 0 0 0 0.1 0.5 0 0.3 0.1 0 0 0 0.1 0.1 0 0.4 0.1 0 0.2 0.1 0 0.1 0.2 0 0.4 0.1 0 0.1 0.1 0 0.1 0.1 0 0.4 0.2 0 0.1 0.1 0 0.1 0.1 0 0.5 0.1 0 0.1 0.1 0 0.1 0.1 0 0.3 0.3 0 0.1 0.1 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0.1 0.1 0.1 0 0.1 0.1 0 0.1 0.4 0 0.2 0.1 0 0.1 0.2 0 0.1 0.4 0 0.1 0.1 0 0.1 0.1 0 0.1 0.5 0 0.1 0.1 0 0.1 0.1 0 0.2 0.4 0 0.1 0.1 0 0.1 0.1 0 0.3 0.3 0 0.1 0.1 0 0 0 0.1 0.1 0 0.7 0.1 0 0 0 0 0.2 0.1 0 0.6 0.1 0 0 0 0 0.1 0.1 0 0.6 0.2 0 0 0 0 0.1 0.1 0 0.7 0.1 0 0 0 0 0.1 0.3 0 0.5 0.1 0 0 0 0 0.1 0.1 0.1 0.1 0.5 0.1 0 0 0 0.1 0.2 0.1 0.1 0.4 0.1 0 0 0 0.1 0.1 0.1 0.1 0.4 0.2 0 0 0 0.1 0.1 0.1 0.2 0.4 0.1 0 0 0 0.1 0.3 0.1 0.1 0.3 0.1 0 0 0 0 0.1 0.1 0 0.1 0.7 0 0 0 0 0.1 0.2 0 0.1 0.6 0 0 0 0 0.1 0.1 0 0.1 0.7 0 0 0 0 0.1 0.1 0 0.2 0.6 0 0 0 0 0.3 0.1 0 0.1 0.5</probabilities>
+		</cpt>
+		<cpt id="O1">
+			<state id="Sense_North" />
+			<state id="Sense_South" />
+			<state id="Sense_Level" />
+			<state id="Safe" />
+			<parents>S1 D2</parents>
+			<probabilities>0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.4 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.6 0.1 0.2 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.4 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.4 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.2 0.3 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.4 0.1 0.4 0.1 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.1 0.1 0.4 0.4 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.1 0.1 0.2 0.6 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.1 0.1 0.4 0.4</probabilities>
+		</cpt>
+		<decision id="D1">
+			<state id="Move_North" />
+			<state id="Move_South" />
+			<state id="Move_East" />
+			<state id="Move_West" />
+			<state id="Listen" />
+			<parents>D2 O1</parents>
+		</decision>
+		<utility id="U3">
+			<parents>S3 D3</parents>
+			<utilities>-5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 50 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 50 -5 -5 50 -5 -5 -5 50 -5 -5 -5 50 -5</utilities>
+		</utility>
+		<utility id="U2">
+			<parents>S2 D2</parents>
+			<utilities>-5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 50 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 50 -5 -5 50 -5 -5 -5 50 -5 -5 -5 50 -5</utilities>
+		</utility>
+		<utility id="U1">
+			<parents>S1 D1</parents>
+			<utilities>-5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 50 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 -5 50 -5 -5 50 -5 -5 -5 50 -5 -5 -5 50 -5</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only" name="UAV_IPTG_T3">
+			<node id="O3">
+				<name>O3</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>49 448 90 473</position>
+				<barchart width="128" height="90" />
+			</node>
+			<node id="S3">
+				<name>S3</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>45 308 93 336</position>
+				<barchart width="128" height="180" />
+			</node>
+			<node id="O2">
+				<name>O2</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>203 448 244 473</position>
+				<barchart width="128" height="90" />
+			</node>
+			<node id="S2">
+				<name>S2</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>199 307 247 337</position>
+				<barchart width="128" height="180" />
+			</node>
+			<node id="O1">
+				<name>O1</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>331 447 372 472</position>
+				<barchart width="128" height="90" />
+			</node>
+			<node id="S1">
+				<name>S1</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>327 307 375 337</position>
+				<barchart width="128" height="180" />
+			</node>
+			<node id="D3">
+				<name>D3</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>101 378 144 404</position>
+				<barchart width="128" height="108" />
+			</node>
+			<node id="D2">
+				<name>D2</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>253 378 294 404</position>
+				<barchart width="128" height="108" />
+			</node>
+			<node id="D1">
+				<name>D1</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>399 378 439 404</position>
+				<barchart width="128" height="108" />
+			</node>
+			<node id="U3">
+				<name>U3</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>95 219 146 251</position>
+			</node>
+			<node id="U2">
+				<name>U2</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>244 220 299 252</position>
+			</node>
+			<node id="U1">
+				<name>U1</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>395 219 446 251</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

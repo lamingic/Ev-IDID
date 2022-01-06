@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smile version="1.0" id="DUAV3_DID" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="L0X3">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333334</probabilities>
+		</cpt>
+		<cpt id="L0Y3">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333334</probabilities>
+		</cpt>
+		<cpt id="O3">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<parents>L0X3 L0Y3</parents>
+			<probabilities>0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2</probabilities>
+		</cpt>
+		<decision id="D3">
+			<state id="Choice0" />
+			<state id="Choice1" />
+			<state id="Choice2" />
+			<state id="Choice3" />
+			<state id="Choice4" />
+			<parents>O3</parents>
+		</decision>
+		<cpt id="L0X2">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<parents>L0X3 D3</parents>
+			<probabilities>1 0 0 1 0 0 0.2 0.8 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0.2 0.8 0.8 0.2 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0.8 0.2 0 0 1</probabilities>
+		</cpt>
+		<cpt id="L0Y2">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<parents>L0Y3 D3</parents>
+			<probabilities>0.2 0.8 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0.2 0.8 0.8 0.2 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0.8 0.2 0 0 1 0 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="O2">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<parents>L0X2 L0Y2 D3</parents>
+			<probabilities>0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.4 0.08 0.4 0.08 0.04 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.4 0.08 0.4 0.08 0.04 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.025 0.025 0.9 0.025 0.025 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.9 0.025 0.025 0.025 0.025 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.9 0.025 0.025 0.025 0.025 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.025 0.025 0.025 0.025 0.9 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.4 0.08 0.08 0.4 0.04 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.4 0.08 0.08 0.4 0.04 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.025 0.025 0.025 0.9 0.025</probabilities>
+		</cpt>
+		<decision id="D2">
+			<state id="Choice0" />
+			<state id="Choice1" />
+			<state id="Choice2" />
+			<state id="Choice3" />
+			<state id="Choice4" />
+			<parents>D3 O2</parents>
+		</decision>
+		<cpt id="L0X1">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<parents>L0X2 D2</parents>
+			<probabilities>1 0 0 1 0 0 0.2 0.8 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0.2 0.8 0.8 0.2 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0.8 0.2 0 0 1</probabilities>
+		</cpt>
+		<cpt id="L0Y1">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<parents>L0Y2 D2</parents>
+			<probabilities>0.2 0.8 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0.2 0.8 0.8 0.2 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0.8 0.2 0 0 1 0 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="O1">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<state id="State3" />
+			<state id="State4" />
+			<parents>L0X1 L0Y1 D2</parents>
+			<probabilities>0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.4 0.08 0.4 0.08 0.04 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.4 0.08 0.4 0.08 0.04 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.025 0.025 0.9 0.025 0.025 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.9 0.025 0.025 0.025 0.025 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.9 0.025 0.025 0.025 0.025 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.025 0.025 0.025 0.025 0.9 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.4 0.08 0.08 0.4 0.04 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.4 0.08 0.08 0.4 0.04 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.2 0.025 0.025 0.025 0.9 0.025</probabilities>
+		</cpt>
+		<decision id="D1">
+			<state id="Choice0" />
+			<state id="Choice1" />
+			<state id="Choice2" />
+			<state id="Choice3" />
+			<state id="Choice4" />
+			<parents>D2 O1</parents>
+		</decision>
+		<utility id="U3">
+			<parents>L0X2 L0Y2 D3</parents>
+			<utilities>-5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 50 50 50 50 55 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0</utilities>
+		</utility>
+		<cpt id="L0Y0">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<parents>L0Y1 D1</parents>
+			<probabilities>0.2 0.8 0 1 0 0 1 0 0 1 0 0 1 0 0 0 0.2 0.8 0.8 0.2 0 0 1 0 0 1 0 0 1 0 0 0 1 0 0.8 0.2 0 0 1 0 0 1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="L0X0">
+			<state id="State0" />
+			<state id="State1" />
+			<state id="State2" />
+			<parents>L0X1 D1</parents>
+			<probabilities>1 0 0 1 0 0 0.2 0.8 0 1 0 0 1 0 0 0 1 0 0 1 0 0 0.2 0.8 0.8 0.2 0 0 1 0 0 0 1 0 0 1 0 0 1 0 0.8 0.2 0 0 1</probabilities>
+		</cpt>
+		<utility id="U2">
+			<parents>L0X1 L0Y1 D2</parents>
+			<utilities>-5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 50 50 50 50 55 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0</utilities>
+		</utility>
+		<utility id="U1">
+			<parents>L0X0 L0Y0 D1</parents>
+			<utilities>-5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0 50 50 50 50 55 -5 -5 -5 -5 0 -5 -5 -5 -5 0 -5 -5 -5 -5 0</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only" name="DUAV3_DID">
+			<node id="O3">
+				<name>O3</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>49 448 90 473</position>
+			</node>
+			<node id="L0X3">
+				<name>L0X3</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>90 222 138 250</position>
+			</node>
+			<node id="L0Y3">
+				<name>L0Y3</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>29 125 78 155</position>
+			</node>
+			<node id="O2">
+				<name>O2</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>242 446 283 471</position>
+			</node>
+			<node id="L0X2">
+				<name>L0X2</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>279 221 327 251</position>
+			</node>
+			<node id="L0Y2">
+				<name>L0Y2</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>215 125 264 155</position>
+			</node>
+			<node id="O1">
+				<name>O1</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>438 442 479 467</position>
+			</node>
+			<node id="L0X1">
+				<name>L0X1</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>445 221 493 251</position>
+			</node>
+			<node id="L0Y1">
+				<name>L0Y1</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>381 125 430 155</position>
+			</node>
+			<node id="D3">
+				<name>D3</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>143 358 186 384</position>
+			</node>
+			<node id="D2">
+				<name>D2</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>339 355 380 381</position>
+			</node>
+			<node id="D1">
+				<name>D1</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>517 356 557 382</position>
+			</node>
+			<node id="U3">
+				<name>U3</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>102 53 153 85</position>
+			</node>
+			<node id="L0Y0">
+				<name>L0Y0</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>549 123 598 153</position>
+			</node>
+			<node id="L0X0">
+				<name>L0X0</name>
+				<interior color="ffff99" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>568 222 616 252</position>
+			</node>
+			<node id="U2">
+				<name>U2</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>288 50 343 82</position>
+			</node>
+			<node id="U1">
+				<name>U1</name>
+				<interior color="00ff00" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>473 46 524 78</position>
+			</node>
+			<arcformat parent="L0X3" child="O3" width="1" color="a0a0a0" />
+			<arcformat parent="L0Y3" child="O3" width="1" color="a0a0a0" />
+			<arcformat parent="O3" child="D3" width="1" color="000080" />
+			<arcformat parent="L0X3" child="L0X2" width="1" color="000080" />
+			<arcformat parent="D3" child="L0X2" width="1" color="000080" />
+			<arcformat parent="L0Y3" child="L0Y2" width="1" color="000080" />
+			<arcformat parent="D3" child="L0Y2" width="1" color="000080" />
+			<arcformat parent="L0X2" child="O2" width="1" color="000080" />
+			<arcformat parent="L0Y2" child="O2" width="1" color="000080" />
+			<arcformat parent="D3" child="O2" width="1" color="000080" />
+			<arcformat parent="D3" child="D2" width="1" color="000080" />
+			<arcformat parent="O2" child="D2" width="1" color="000080" />
+			<arcformat parent="L0X2" child="L0X1" width="1" color="000080" />
+			<arcformat parent="D2" child="L0X1" width="1" color="000080" />
+			<arcformat parent="L0Y2" child="L0Y1" width="1" color="000080" />
+			<arcformat parent="D2" child="L0Y1" width="1" color="000080" />
+			<arcformat parent="D2" child="D1" width="1" color="000080" />
+			<arcformat parent="O1" child="D1" width="1" color="000080" />
+			<arcformat parent="L0Y1" child="L0Y0" width="1" color="000080" />
+			<arcformat parent="D1" child="L0Y0" width="1" color="000080" />
+			<arcformat parent="L0X1" child="L0X0" width="1" color="000080" />
+			<arcformat parent="D1" child="L0X0" width="1" color="000080" />
+		</genie>
+	</extensions>
+</smile>

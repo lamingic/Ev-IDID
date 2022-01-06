@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smile version="1.0" id="UAV_IPTG_TIDID3" numsamples="10000" discsamples="10000">
+	<nodes>
+		<deterministic id="D3">
+			<state id="Move_North" />
+			<state id="Move_South" />
+			<state id="Move_East" />
+			<state id="Move_West" />
+			<state id="Listen" />
+			<resultingstates>Listen</resultingstates>
+		</deterministic>
+		<cpt id="O2">
+			<state id="Sense_North" />
+			<state id="Sense_South" />
+			<state id="Sense_Level" />
+			<state id="Found" />
+			<parents>D3</parents>
+			<probabilities>0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<deterministic id="D2">
+			<state id="Move_North" />
+			<state id="Move_South" />
+			<state id="Move_East" />
+			<state id="Move_West" />
+			<state id="Listen" />
+			<parents>O2</parents>
+			<resultingstates>Listen Listen Listen Listen</resultingstates>
+		</deterministic>
+		<cpt id="O1">
+			<state id="Sense_North" />
+			<state id="Sense_South" />
+			<state id="Sense_Level" />
+			<state id="Found" />
+			<parents>D2</parents>
+			<probabilities>0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<deterministic id="D1">
+			<state id="Move_North" />
+			<state id="Move_South" />
+			<state id="Move_East" />
+			<state id="Move_West" />
+			<state id="Listen" />
+			<parents>O1</parents>
+			<resultingstates>Listen Listen Listen Listen</resultingstates>
+		</deterministic>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE_INTERNAL" name="UAV_IPTG_TIDID3">
+			<node id="D3">
+				<name>D3</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>132 384 175 410</position>
+				<barchart width="128" height="108">
+				</barchart>
+			</node>
+			<node id="O2">
+				<name>O2</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>229 453 270 478</position>
+				<barchart width="128" height="90">
+				</barchart>
+			</node>
+			<node id="D2">
+				<name>D2</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>323 383 364 409</position>
+				<barchart width="128" height="108">
+				</barchart>
+			</node>
+			<node id="O1">
+				<name>O1</name>
+				<interior color="ccffff" />
+				<outline color="000080" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>424 453 465 478</position>
+				<barchart width="128" height="90">
+				</barchart>
+			</node>
+			<node id="D1">
+				<name>D1</name>
+				<interior color="ff99cc" />
+				<outline color="000080" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>517 384 557 410</position>
+				<barchart width="128" height="108">
+				</barchart>
+			</node>
+		</genie>
+	</extensions>
+</smile>

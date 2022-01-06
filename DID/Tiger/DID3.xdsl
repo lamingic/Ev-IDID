@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="S3">
+			<state id="TL" />
+			<state id="TR" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="O3">
+			<state id="GL" />
+			<state id="GR" />
+			<parents>S3</parents>
+			<probabilities>0.85 0.15 0.15 0.85</probabilities>
+		</cpt>
+		<decision id="D3">
+			<state id="OL" />
+			<state id="OR" />
+			<state id="L" />
+			<parents>O3</parents>
+		</decision>
+		<cpt id="S2">
+			<state id="TL" />
+			<state id="TR" />
+			<parents>S3 D3</parents>
+			<probabilities>0.5 0.5 0.5 0.5 1 0 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="O2">
+			<state id="GL" />
+			<state id="GR" />
+			<parents>S2 D3</parents>
+			<probabilities>0.5 0.5 0.5 0.5 0.85 0.15 0.5 0.5 0.5 0.5 0.15 0.85</probabilities>
+		</cpt>
+		<decision id="D2">
+			<state id="OL" />
+			<state id="OR" />
+			<state id="L" />
+			<parents>D3 O2</parents>
+		</decision>
+		<cpt id="S1">
+			<state id="TL" />
+			<state id="TR" />
+			<parents>S2 D2</parents>
+			<probabilities>0.5 0.5 0.5 0.5 1 0 0.5 0.5 0.5 0.5 0 1</probabilities>
+		</cpt>
+		<cpt id="O1">
+			<state id="GL" />
+			<state id="GR" />
+			<parents>S1 D2</parents>
+			<probabilities>0.5 0.5 0.5 0.5 0.85 0.15 0.5 0.5 0.5 0.5 0.15 0.85</probabilities>
+		</cpt>
+		<decision id="D1">
+			<state id="OL" />
+			<state id="OR" />
+			<state id="L" />
+			<parents>D2 O1</parents>
+		</decision>
+		<utility id="U3">
+			<parents>S3 D3</parents>
+			<utilities>-100 10 -1 10 -100 -1</utilities>
+		</utility>
+		<utility id="U2">
+			<parents>S2 D2</parents>
+			<utilities>-100 10 -1 10 -100 -1</utilities>
+		</utility>
+		<utility id="U1">
+			<parents>S1 D1</parents>
+			<utilities>-100 10 -1 10 -100 -1</utilities>
+		</utility>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe This network was created in GeNIe Academic, which can be used for academic teaching and research purposes only" name="Network2">
+			<node id="S1">
+				<name>S1</name>
+				<interior color="ffff99" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>574 304 646 353</position>
+			</node>
+			<node id="S3">
+				<name>S3</name>
+				<interior color="ffff99" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>130 304 202 353</position>
+			</node>
+			<node id="S2">
+				<name>S2</name>
+				<interior color="ffff99" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>352 304 424 353</position>
+			</node>
+			<node id="O3">
+				<name>O3</name>
+				<interior color="ccffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>139 416 194 452</position>
+			</node>
+			<node id="O2">
+				<name>O2</name>
+				<interior color="ccffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>361 416 416 452</position>
+			</node>
+			<node id="O1">
+				<name>O1</name>
+				<interior color="ccffff" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>583 416 638 452</position>
+			</node>
+			<node id="D3">
+				<name>D3</name>
+				<interior color="ff99cc" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>141 548 191 584</position>
+				<barchart width="128" height="80" />
+			</node>
+			<node id="D2">
+				<name>D2</name>
+				<interior color="ff99cc" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>364 548 414 584</position>
+				<barchart width="128" height="80" />
+			</node>
+			<node id="D1">
+				<name>D1</name>
+				<interior color="ff99cc" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>588 548 638 584</position>
+				<barchart width="128" height="80" />
+			</node>
+			<node id="U3">
+				<name>U3</name>
+				<interior color="00ff00" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>264 231 330 273</position>
+				<barchart width="128" height="80" />
+			</node>
+			<node id="U2">
+				<name>U2</name>
+				<interior color="00ff00" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>457 231 523 273</position>
+			</node>
+			<node id="U1">
+				<name>U1</name>
+				<interior color="00ff00" />
+				<outline color="000000" />
+				<font color="000000" name="Arial" size="10" />
+				<position>695 231 761 273</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
