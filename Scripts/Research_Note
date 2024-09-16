@@ -1,0 +1,145 @@
+Research Note
+@ Biyang Ma
+@ biyangma@stu.xmu.edu.cn
+@ mabiyang001@hotmail.com
+----------------------------------------------------------------
+## research tips:
+1.  when use the GA for generating more policy trees,
+    the nodes in bottom level of the policy tree have high prob for changing,
+    while the top one doesnot.
+    But the change of top one has more value for improve the policy of agent i,
+    solution: give more weight for the top node in genomes of GA
+2.  on how to calculate the diversity of a group of policy trees,
+    does it has the property fo sub-module fuction
+3.  how to apply the idid model to more agents scenario
+4.  how to calculate the contribution of diversity of a policy tree in a group of policy trees
+5.  we can delete the arc from node OD to MOD in IDID model
+
+=================================================================
+## coding log:
+2020-10-30->11-1
+1.  import the did network, set evidence and solve it
+2.  create policy path of did
+3.  output the path
+
+2020-11-2->11-6
+1.  import the did network, set evidence and sovle it,
+2.  expansion did, merge the policy tree to reduce the size of states in MOD node,
+    in table operation style
+3.  import the did network, set evidence and sovle it,
+4.  create policy path of idid
+5.  output the policy path
+6.  output the policy tree as image
+
+2020-11-7->11-12
+1.  package the code into oop style
+2.  create policy tree of idid and did
+3.  recreate the expansion of did in policy tree style
+4.  basic tree merged method:import pathes of policy trees,
+    then merge from bottom-up
+5.  build offline test environment
+
+2020-11-13->11-15
+1.  package the code into oop style
+2.  create policy tree of idid and did
+3.  recreate the expansion of did in policy tree style
+4.  memory-saved tree merged method: import pathe of the first policy tree,
+    then merge from bottom-up, then the next one....
+5.  incremental tree merged method: for path of new policy tree
+6.  build offline test environment for tiger
+
+2020-11-15->11-17
+1.  how to encode the policy tree into genome and the calculate of fitness
+2.  build GA for generate more policy tree
+3.  package the code into oop style and test
+6.  build offline test environment for uav
+
+2020-11-17->11-19
+1.  improve GA for generate more policy tree with high diversity
+
+2020-11-20->11-22
+1.  create mian GUI and package the sim into GUI
+2.  create class for displaying interaction of tiger in GUI
+3.  create class for displaying policy tree of agents in GUI
+
+2020-11-23->11-24
+1.  improve GA for generating more policy trees with high diversity,
+    and redesign the fitness function
+
+2020-11-25
+1.  improve GA for generating more policy trees with high diversity,
+    and considering the weight of level
+
+2020-11-26
+1.  consider the policy tree i's contribution to the group
+2.  analysis the subtraction and division operation
+
+2020-11-27
+1.  draw the diagram of the whole work,
+2.  proof why we can delete the arc from node OD to MOD in IDID model
+
+2020-11-28
+1.  improve GA for generating more policy trees with high diversity [fitness],
+    and considering the weight of level
+2.  for calculating the fitness of each individual,
+    load the DID model,
+    change the D node to chance node,
+    import the policy tree,
+    set the evidence of initial states as virtual evidence
+    find the maximun reward and the belief,that this policy tree can achive
+    so, the reward is this policy tree's fitness
+
+2020-11-29
+1.  fix bugs in class policytree
+
+2020-11-29
+1.  recode reward calculation
+
+2020-11-30
+1.  redesign the offline test framework
+    agent i's policy tree --- agent j's most weighted path
+    agent i's policy tree --- agent j's random path
+    agent i's most weighted path --- agent j's policy tree
+2   considering the weight of path in agent j's policy tree
+
+2020-12-01
+1.  considering the prior belief in DID when expension
+
+2020-12-02
+1.  redesign the offline test
+
+2020-12-03
+1.  considering the prior beleif in offline test
+
+2020-12-04
+1.  do more tests
+
+2020-12-04-09
+1.  do more tests
+2.  implement multi-group GA
+3.  considering the prior belief in IDID
+
+2020-12-10
+1.  optimize the progress of solving DID and IDID
+2.  make an interface of GA
+3.  do more tests
+
+2020-12-11->12-12
+1.  add progress bar
+2.  do more tests
+3.  speed up the progress of offline test
+
+2020-12-13->12-14
+1.  implement the group GA framework
+
+2020-12-15
+1.  implement the solve method for improving the performance of IDID
+2.  plot the negative and positive of reward in different color
+
+2020-12-16
+1.  implement multi-policy tree offline test
+
+
+
+
+
